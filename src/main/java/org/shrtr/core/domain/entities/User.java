@@ -20,6 +20,8 @@ public class User extends BaseEntity implements UserDetails {
   private String password;
   private String firstName;
   private String lastName;
+  private int maxRequests;
+  private long maxRequestsTimeWindowMs;
 
   @ManyToMany
   @JoinTable(
